@@ -1,0 +1,8 @@
+[submodule "qgroundcontrol"]
+	path = qgroundcontrol
+	url = https://github.com/mavlink/qgroundcontrol
+	branch = pr-multi-gcs-June2026
+[submodule "ardupilot"]
+	path = ardupilot
+	url = https://github.com/Davidsastresas/ardupilot
+	branch = pr-multi-gcs-June2026-AP

@@ -1,0 +1,13 @@
+# Local tooling / Claude config
+.claude/
+
+# Reference checkout: upstream mavlink/mavlink
+mavlink/
+
+# SITL / runtime artifacts
+*.tlog
+*.tlog.raw
+*.parm
+
+# Logs
+*.log
