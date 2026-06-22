@@ -16,6 +16,8 @@ The submodules pin a specific commit. Run `git submodule update --remote` to
 advance them to the latest of their tracked branch (then commit the parent to
 re-pin).
 
+QGC PR is here https://github.com/mavlink/qgroundcontrol/pull/14560 and build artifacts for Linux is in https://github.com/mavlink/qgroundcontrol/actions/runs/27784220835
+
 ## Clone
 
 ```bash
