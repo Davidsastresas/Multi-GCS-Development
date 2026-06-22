@@ -43,3 +43,7 @@ git submodule update --init --recursive
 
 Multi-GCS SITL: ArduPilot SITL + MAVProxy relaying to multiple QGC instances.
 See the `launch-*.sh` scripts.
+
+- Launch Ardupilot SITL
+- Launch QGC with the script, so it launches several instances at once, each of them with different SystemID, otherwise all of the will take the same and it will need to be adjusted manually on each launch. It is needed to configure 4 UDP connections to each of the ports the mavproxy launch script is using.
+- Launch mavproxy script, so SITL can talk to each of the QGC instances.
