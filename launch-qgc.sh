@@ -1,9 +1,15 @@
 #!/bin/bash
-# Launch 3 QGC instances with system IDs 253, 254, 255
+# Launch QGC instances with different system IDs
+# Usage: ./launch-qgc.sh [/path/to/QGroundControl]
 # Each runs in the background; Ctrl+C kills all of them
 
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
-QGC="$SCRIPT_DIR/qgroundcontrol/build/Debug/QGroundControl"
+
+if [ -n "$1" ]; then
+    QGC="$1"
+else
+    QGC="$SCRIPT_DIR/qgroundcontrol/build/Debug/QGroundControl"
+fi
 
 if [ ! -x "$QGC" ]; then
     echo "QGC binary not found at: $QGC"
